@@ -123,7 +123,7 @@ class IICDisplay:
             self.IIC_write_cmd(self.LCD_NOBACKLIGHT)
 
     # put string function
-    def display_display_string(self, string, line):
+    def display_string(self, string, line):
         if line == 1:
             self.display_write(0x80)
         if line == 2:
